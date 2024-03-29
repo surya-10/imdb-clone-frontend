@@ -6,7 +6,7 @@ function Home() {
   let [movie, setMovie] = useState("movies")
 
   return (
-    <div className='home-div p-4'>
+    <div className='home-div p-1'>
       <div className='container'>
       <div className='main d-flex justify-content-around align-items-left flex-column mt-5'>
         <p className='h3 para'>Welcome !</p>

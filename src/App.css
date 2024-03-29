@@ -56,18 +56,14 @@ body{
   border-bottom: 2px solid red;/* Adjust border style as needed */
 }
 .home-div{
-  background-image: url("https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg");
+  background:linear-gradient(to right, rgb(228, 28, 228), blue, rgb(241, 11, 11), green);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100vh;
-  z-index: -1;
-  background-clip: text;
-}
+  height: 100%;
+ background-clip: text;
+} 
 .para{
   color: transparent;
   text-align: justify;
