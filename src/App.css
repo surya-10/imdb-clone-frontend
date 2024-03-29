@@ -1,5 +1,14 @@
-.App {
+/* .App {
   text-align: center;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+body{
+  background-color: white;
+
+}
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
 .App-logo {
@@ -13,26 +22,288 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image-slide{
+  width: 100%;
+  height: 450px;
+}
+.cont{
+  width: 100%;
+  padding: 0;
+}
+.imdb-img{
+  width: 90px;
+  height: 60px;
+}
+.imdb-img-icon{
+  width: 70px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+.nav-link{
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+.navb{
+  gap: 20px;
+  margin-left: 20px;
+}
+.active {
+  border-bottom: 2px solid red;/* Adjust border style as needed */
+}
+.home-div{
+  background-image: url("https://images.pexels.com/photos/1191710/pexels-photo-1191710.jpeg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-clip: text;
+}
+.para{
+  color: transparent;
+  text-align: justify;
+  
+}
+.para:nth-child(2){
+  text-indent: 26px;
+  font-weight: 600;
+}
+.search-result {
+  /* font-family: "Rubik Scribble", system-ui; */
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  background: linear-gradient(to right, powderblue, seagreen);
+  background-clip: text;
+  background-color: black;
+}
+
+/* .actors{
+  gap:10px;
+} */
+.actorr p{
+  text-align: justify;
+  text-indent: 20px;
+  letter-spacing: 1px;
+}
+.actorr p::first-letter{
+  font-size: 25px;
+  font-weight: bolder;
+  color: red;
+}
+.actorr{
+  border-bottom: 1px solid red;
+  padding: 5px;
+}
+.act-name{
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.actorr:hover{
+  cursor: pointer;
+}
+.actorr:nth-child(even){
+  background-color:darkseagreen;
+  color: white;
+}
+.actorr:nth-child(even):hover{
+  border-bottom: 5px solid red;
+}
+.actorr:nth-child(odd):hover{
+  border-bottom: 5px solid rgb(253, 56, 253);
+}
+.producerr{
+  gap:10px;
+}
+.producerr p{
+  text-align: justify;
+  text-indent: 20px;
+  letter-spacing: 1px;
+}
+.producerr p::first-letter{
+  font-size: 25px;
+  font-weight: bolder;
+  color: red;
+}
+.producerr{
+  /* border-bottom: 1px solid red; */
+  padding: 5px;
+}
+.act-name{
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.producerr:hover{
+  cursor: pointer;
+}
+/* .produce:nth-child(even){
+  background-color:;
+  color: white;
+}
+*/
+.produce{
+  border-bottom: 2px solid rosybrown;
+}
+ .produce:nth-child(even):hover{
+  border-bottom: 5px solid red;
+}
+.produce:nth-child(odd):hover{
+  border-bottom: 5px solid rgb(253, 56, 253);
+}
+.add-review{
+  outline: none;
+  padding: 5px 15px;
+  border: none;
+  border: 1px solid red;
+  color: red;
+  background-color: white;
+  font-weight: 500;
+}
+.review::before{
+  content: "";
+  position: absolute;
+  background-image: url("https://img.freepik.com/free-photo/top-view-camera-draw-with-popcorn_23-2148470179.jpg?w=1060&t=st=1711624554~exp=1711625154~hmac=6319bea8e7c5fda575b3202ac02b8d6c9a9715e45b280b3a7b3508a4df53d84a");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  filter: blur(3px);
+  background-size: cover;
+}
+.form{
+  position: relative;
+  background-color: white;
+  opacity: 0.9;
+  border-radius: 13px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 20px 3px;
+
+}
+.parent-lists{
+  position: relative;
+}
+.lists{
+  position: absolute;
+  top:30px;
+  left: 0;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  z-index: 10;
+  /* padding: 3px; */
+}
+.plus{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 6px 11px;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+.delete{
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  padding: 6px 11px;
+  border-radius: 15px;
+  margin-left: 5px;
+}
+.list-para{
+  display: inline-block;
+}
+.form-inside{
+  gap: 20px;
+}
+.form-inside label{
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.submit{
+  border: 1px solid red;
+  background-color: white;
+  color: red;
+  /* font-weight: bold; */
+  font-size: 18px;
+  outline: none;
+  padding: 7px 15px;
+}
+.submit:hover{
+  background-color: red;
+  color: white;
+}
+.movie-poster{
+  width: 250px;
+  height: 280px;
+  border-radius: 10px;
+}
+.movie-review{
+  gap: 20px;
+}
+.plot-msg{
+  text-align: justify;
+  letter-spacing: 1px;
+  text-indent: 26px;
+}
+.edit-btn{
+  border: none;
+  outline: none;
+  border: 1px solid gray;
+  color: white;
+  padding: 5px 15px;
+  background-color: black;
+  font-weight: 600;
+}
+.delete-btn{
+  outline: none;
+  padding: 5px 15px;
+  border: none;
+  border: 1px solid red;
+  color: red;
+  background-color: white;
+  font-weight: 500;
+}
+.moviess{
+  gap: 20px;
+}
+textarea{
+  width:300px;
+  padding: 3px;
+}
+.updated-poster{
+  width: 50px;
+  height: 70px;
+}
+.loader{
+  position: absolute;
+  top: 90%;
+  left: 45%;
+
+}
+body{
+  position: relative;
+}
+.edit-loader{
+  position: absolute;
+  top: 20%;
+  left: 45%;
+
 }
