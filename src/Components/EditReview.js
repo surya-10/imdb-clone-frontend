@@ -171,8 +171,9 @@ function EditReview() {
                     imageData,
                     rating
                 }
+                console.log(obj);
                 setUpdateBtn("Updating....")
-                let result = await fetch(`https://imdb-clone-backend-6ck9.onrender.com/movie/edit/${id}`, {
+                let result = await fetch(`http://localhost:5000/movie/edit/${id}`, {
                     method: "PUT",
                     body: JSON.stringify(obj),
                     headers: {
@@ -180,11 +181,12 @@ function EditReview() {
                     }
                 })
                 let output = await result.json();
+                setUpdateBtn("Update");
                 setDisable(false);
                 if(output.result.acknowledged==true){
                     navigate("/movies");
                 }
-                setUpdateBtn("Update")
+                setUpdateBtn("Update");
 
             }
             if(imageData==null){
@@ -199,8 +201,9 @@ function EditReview() {
                     imageData:updatedImage,
                     rating
                 }
+                console.log(obj);
 
-                let result = await fetch(`https://imdb-clone-backend-6ck9.onrender.com/movie/edit/new-image/${id}`, {
+                let result = await fetch(`http://localhost:5000/movie/edit/new-image/${id}`, {
                     method: "PUT",
                     body: JSON.stringify(obj),
                     headers: {
